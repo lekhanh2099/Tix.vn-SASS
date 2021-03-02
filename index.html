@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tix / Đặt vé nhanh chóng</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="icon"
+      href="./accsets/images/logo-title.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!--! Slick Carousel -->
+    <link rel="stylesheet" href="./accsets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./accsets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./accsets/css/slick.css" />
+    <link rel="stylesheet" href="./accsets/css/slick-theme.css" />
+    <!--! Style Css  -->
+    <link rel="stylesheet" href="./accsets/css/style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <!--TODO: Header page  -->
+      <header
+        class="header d-flex justify-content-between align-items-center align-content-center"
+      >
+        <a href="#home" class="logo">
+          <img src="./accsets/images/web-logo.png" alt="" class="logo-img" />
+        </a>
+
+        <nav class="nav-1">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Lịch Chiếu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Cụm Rạp</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Ứng dụng</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="direct d-flex justify-content-between align-items-center">
+          <div class="overlay-direct justify-content-end">
+            <div class="user pr-2">
+              <a href="#">
+                <img src="./accsets/images/user.jpg" alt="" class="img-user" />
+                <span class="login mx-2">Đăng nhập</span>
+              </a>
+            </div>
+            <div class="map mx-2">
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="location px-2">Hồ Chí Minh</span>
+              <i class="fas fa-angle-down"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--TODO: Carousel page -->
+
+      <section class="select-film w-100">
+        <div id="demo" class="carousel slide" data-ride="">
+          <!-- carousel -->
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-overlay"></div>
+            <div class="carousel-item active">
+              <img src="./accsets/images/slide-1.jpg" alt="" />
+              <a
+                href="#"
+                class="play-trailer d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-play text-align-center"></i>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <img src="./accsets/images/slide-2.jpg" alt="" />
+              <a
+                href="#"
+                class="play-trailer d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-play text-align-center"></i>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <img src="./accsets/images/slide-3.jpg" alt="" />
+              <a
+                href="#"
+                class="play-trailer d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-play text-align-center"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </section>
+
+      <!--TODO: Select film want to watch -->
+      <section class="select-film container">
+        <div class="row">
+          <div
+            class="col-12 select-content d-flex justify-content-between align-items-center"
+          >
+            <div class="select-item">
+              <span>Phim</span>
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="select-item">
+              <span>Rạp</span>
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="select-item">
+              <span>Ngày xem</span>
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="select-item">
+              <span>Xuất chiếu</span>
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="select-item">
+              <button class="btn-buy text-white">Mua vé ngay</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--TODO:  -->
+      <section class="list-film container">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="list-film__title d-flex justify-content-around align-items-center align-content-center"
+            >
+              <a href="#" class="list-film__text">Đang Chiếu</a>
+              <a href="#" class="list-film__text">Sắp Chiếu</a>
+            </div>
+          </div>
+
+          <div class="owl-carousel">
+            <div class="col-12">
+              <div class="container">
+                <div class="row">
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-1.png"
+                        alt=""
+                        class="list-film__item-img"
+                      />
+                      <a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Tom & Jerry
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-2.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Lừa Đểu Gặp Lừa Đảo - The Con-Heartist (C16)
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-3.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Bố Già
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-4.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Tazza: Thần Bịp Jack Chột - Tazza: One Eyed Jack (C13)
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-5.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        PALM SPRINGS: Mở mắt thấy hôm qua
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-6.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Cua Lại Vợ Bầu - Win My Baby Back (C16)
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-7.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Siêu Trộm Đường Phố
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-8.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Căn Phòng Ma Ám - Stigmatized Properties (C16)
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="container">
+                <div class="row">
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-1.png"
+                        alt=""
+                        class="list-film__item-img"
+                      />
+                      <a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Tom & Jerry
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-2.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Tom & Jerry
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-3.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Tom & Jerry
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-4.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Tom & Jerry
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-5.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Tom & Jerry
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-6.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Tom & Jerry
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-7.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Tom & Jerry
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3 list-film__item">
+                    <div class="div-img">
+                      <div class="list-film__overlay"></div>
+                      <img
+                        src="./accsets/images/list-8.png"
+                        alt=""
+                        class="list-film__item-img"
+                      /><a href="#" class="list-film__item-img--trailer">
+                        <i class="fas fa-play text-align-center"></i>
+                      </a>
+                      <button class="list-film__btn">Mua vé</button>
+                    </div>
+                    <div class="list-film__item-info">
+                      <span class="list-film__item-info--name">
+                        <span class="list-film__item-info-age">18+</span>
+                        Tom & Jerry
+                      </span>
+                      <div class="list-film__item-info--time">120 phút</div>
+                    </div>
+                    <div class="list-film__rank">
+                      <p class="piont">7.6</p>
+                      <p class="star">
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.png" alt="" />
+                        <img src="./accsets/images/star1.2.png" alt="" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--TODO: Showtimes -->
+      <section class="showtimes container">
+        <ul class="showtimes__cinema">
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-1.png"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-2.png"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-3.png"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-4.png"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-5.jpg"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-6.png"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-6.png"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-6.png"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-6.png"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-6.png"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-6.png"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-6.png"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+          <li class="showtimes__cinema-item">
+            <a href="#" class="showtimes__cinema-link">
+              <img
+                src="./accsets/images/cinema-6.png"
+                alt=""
+                class="showtimes__cinema-img"
+              />
+            </a>
+          </li>
+        </ul>
+
+        <div class="showtimes__direct-div">
+          <ul class="showtimes__direct">
+            <li class="showtimes__direct-item">
+              <a href="#" class="showtimes__direct-link">
+                <img
+                  src="./accsets/images/cinema-direct-1.png"
+                  alt=""
+                  class="showtimes__direct-img"
+                />
+                <div class="showtimes__direct-info">
+                  <span class="showtimes__direct-name">
+                    <span class="showtimes__direct-name--color">BHD Star</span>
+                    - Bitexco
+                  </span>
+                  <span class="showtimes__direct-location">
+                    L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                  </span>
+                  <span class="showtimes__direct-learn--more">[chi tiết]</span>
+                </div>
+              </a>
+            </li>
+            <li class="showtimes__direct-item">
+              <a href="#" class="showtimes__direct-link">
+                <img
+                  src="./accsets/images/cinema-direct-1.png"
+                  alt=""
+                  class="showtimes__direct-img"
+                />
+                <div class="showtimes__direct-info">
+                  <span class="showtimes__direct-name">
+                    <span class="showtimes__direct-name--color">BHD Star</span>
+                    - Bitexco
+                  </span>
+                  <span class="showtimes__direct-location">
+                    L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                  </span>
+                  <span class="showtimes__direct-learn--more">[chi tiết]</span>
+                </div>
+              </a>
+            </li>
+            <li class="showtimes__direct-item">
+              <a href="#" class="showtimes__direct-link">
+                <img
+                  src="./accsets/images/cinema-direct-1.png"
+                  alt=""
+                  class="showtimes__direct-img"
+                />
+                <div class="showtimes__direct-info">
+                  <span class="showtimes__direct-name">
+                    <span class="showtimes__direct-name--color">BHD Star</span>
+                    - Bitexco
+                  </span>
+                  <span class="showtimes__direct-location">
+                    L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                  </span>
+                  <span class="showtimes__direct-learn--more">[chi tiết]</span>
+                </div>
+              </a>
+            </li>
+            <li class="showtimes__direct-item">
+              <a href="#" class="showtimes__direct-link">
+                <img
+                  src="./accsets/images/cinema-direct-1.png"
+                  alt=""
+                  class="showtimes__direct-img"
+                />
+                <div class="showtimes__direct-info">
+                  <span class="showtimes__direct-name">
+                    <span class="showtimes__direct-name--color">BHD Star</span>
+                    - Bitexco
+                  </span>
+                  <span class="showtimes__direct-location">
+                    L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                  </span>
+                  <span class="showtimes__direct-learn--more">[chi tiết]</span>
+                </div>
+              </a>
+            </li>
+            <li class="showtimes__direct-item">
+              <a href="#" class="showtimes__direct-link">
+                <img
+                  src="./accsets/images/cinema-direct-1.png"
+                  alt=""
+                  class="showtimes__direct-img"
+                />
+                <div class="showtimes__direct-info">
+                  <span class="showtimes__direct-name">
+                    <span class="showtimes__direct-name--color">BHD Star</span>
+                    - Bitexco
+                  </span>
+                  <span class="showtimes__direct-location">
+                    L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                  </span>
+                  <span class="showtimes__direct-learn--more">[chi tiết]</span>
+                </div>
+              </a>
+            </li>
+            <li class="showtimes__direct-item">
+              <a href="#" class="showtimes__direct-link">
+                <img
+                  src="./accsets/images/cinema-direct-1.png"
+                  alt=""
+                  class="showtimes__direct-img"
+                />
+                <div class="showtimes__direct-info">
+                  <span class="showtimes__direct-name">
+                    <span class="showtimes__direct-name--color">BHD Star</span>
+                    - Bitexco
+                  </span>
+                  <span class="showtimes__direct-location">
+                    L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                  </span>
+                  <span class="showtimes__direct-learn--more">[chi tiết]</span>
+                </div>
+              </a>
+            </li>
+            <li class="showtimes__direct-item">
+              <a href="#" class="showtimes__direct-link">
+                <img
+                  src="./accsets/images/cinema-direct-1.png"
+                  alt=""
+                  class="showtimes__direct-img"
+                />
+                <div class="showtimes__direct-info">
+                  <span class="showtimes__direct-name">
+                    <span class="showtimes__direct-name--color">BHD Star</span>
+                    - Bitexco
+                  </span>
+                  <span class="showtimes__direct-location">
+                    L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                  </span>
+                  <span class="showtimes__direct-learn--more">[chi tiết]</span>
+                </div>
+              </a>
+            </li>
+            <li class="showtimes__direct-item">
+              <a href="#" class="showtimes__direct-link">
+                <img
+                  src="./accsets/images/cinema-direct-1.png"
+                  alt=""
+                  class="showtimes__direct-img"
+                />
+                <div class="showtimes__direct-info">
+                  <span class="showtimes__direct-name">
+                    <span class="showtimes__direct-name--color">BHD Star</span>
+                    - Bitexco
+                  </span>
+                  <span class="showtimes__direct-location">
+                    L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                  </span>
+                  <span class="showtimes__direct-learn--more">[chi tiết]</span>
+                </div>
+              </a>
+            </li>
+            <li class="showtimes__direct-item">
+              <a href="#" class="showtimes__direct-link">
+                <img
+                  src="./accsets/images/cinema-direct-1.png"
+                  alt=""
+                  class="showtimes__direct-img"
+                />
+                <div class="showtimes__direct-info">
+                  <span class="showtimes__direct-name">
+                    <span class="showtimes__direct-name--color">BHD Star</span>
+                    - Bitexco
+                  </span>
+                  <span class="showtimes__direct-location">
+                    L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                  </span>
+                  <span class="showtimes__direct-learn--more">[chi tiết]</span>
+                </div>
+              </a>
+            </li>
+            <li class="showtimes__direct-item">
+              <a href="#" class="showtimes__direct-link">
+                <img
+                  src="./accsets/images/cinema-direct-1.png"
+                  alt=""
+                  class="showtimes__direct-img"
+                />
+                <div class="showtimes__direct-info">
+                  <span class="showtimes__direct-name">
+                    <span class="showtimes__direct-name--color">BHD Star</span>
+                    - Bitexco
+                  </span>
+                  <span class="showtimes__direct-location">
+                    L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                  </span>
+                  <span class="showtimes__direct-learn--more">[chi tiết]</span>
+                </div>
+              </a>
+            </li>
+            <li class="showtimes__direct-item">
+              <a href="#" class="showtimes__direct-link">
+                <img
+                  src="./accsets/images/cinema-direct-1.png"
+                  alt=""
+                  class="showtimes__direct-img"
+                />
+                <div class="showtimes__direct-info">
+                  <span class="showtimes__direct-name">
+                    <span class="showtimes__direct-name--color">BHD Star</span>
+                    - Bitexco
+                  </span>
+                  <span class="showtimes__direct-location">
+                    L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                  </span>
+                  <span class="showtimes__direct-learn--more">[chi tiết]</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="showtimes__listmovie">
+          <div class="showtimes__listmovie-title">
+            <img
+              src="./accsets/images/tom-jerry-16127706651597_60x60.png"
+              alt=""
+              class="showtimes__listmovie-img"
+            />
+            <div class="showtimes__listmovie-div">
+              <span class="showtimes__listmovie-name">
+                <span class="showtimes__listmovie-name--color">p</span>
+                Tom and Jerry
+              </span>
+              <span class="showtimes__listmovie-point">
+                100 phút - TIX 7.6 - IMDb 0
+              </span>
+            </div>
+          </div>
+          <div class="showtimes__listmovie-time">
+            <p class="showtimes__listmovie-option">2D Digital</p>
+            <a href="" class="showtimes__listmovie-btn">
+              <span class="showtimes__listmovie-time-start">
+                22:05
+                <span class="showtimes__listmovie-time-end"> ~ 23:45 </span>
+              </span>
+            </a>
+            <a href="" class="showtimes__listmovie-btn">
+              <span class="showtimes__listmovie-time-start">
+                22:05
+                <span class="showtimes__listmovie-time-end"> ~ 23:45 </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--! Olw carouse  -->
+    <script src="./accsets/js/owl.carousel.min.js"></script>
+    <script src="./accsets/js/slick.min.js"></script>
+    <!--!  Main JS -->
+    <script src="./accsets/js/main.js"></script>
+  </body>
+</html>
