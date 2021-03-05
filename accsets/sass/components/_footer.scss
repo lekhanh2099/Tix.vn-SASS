@@ -1,0 +1,64 @@
+/* FOOTER */
+
+.footer {
+  background-color: #222;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #949494;
+}
+
+.footer__top {
+  border-bottom: 1px solid #949494;
+}
+
+.footer__top h3 {
+  font-size: 16px;
+  color: white;
+}
+
+.footer__top p {
+  font-size: 14px;
+  transition: 0.5s all;
+  font-weight: 600;
+}
+
+.footer__top p:hover {
+  color: white;
+}
+
+.footer__top i {
+  font-size: 30px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.iconConnect img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+}
+
+.partner {
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.footer__bottom {
+  margin-top: 15px;
+}
+
+.footer__bottom--logo img {
+  border-radius: 10px;
+}
+
+.footer__bottom h3 {
+  color: white;
+  font-size: 14px;
+}
+
+.footer__bottom p {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}

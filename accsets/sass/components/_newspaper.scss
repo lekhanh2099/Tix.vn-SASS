@@ -1,0 +1,122 @@
+/* NEWSPAPER */
+.newspaper__title {
+  background-image: url(/Tix.vn-SASS-main/accsets/images/back-news.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.newspaper__title a {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  padding: 0 18px;
+  transition: 0.2s all;
+}
+
+.newspaper__title a.active {
+  color: #fb4226 !important ;
+  font-size: 24px;
+}
+
+.newspaper__title a:hover {
+  font-size: 22px;
+}
+
+.newspaper__list--content--top {
+  margin-top: 30px;
+}
+
+.newspaper__list--content--top h3 {
+  font-size: 18px;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.newspaper__list--content--top h3:hover {
+  color: #fb4226 !important ;
+}
+
+.newspaper__list--content--top p {
+  font-size: 15px;
+}
+
+.newspaper__list--content--bottom {
+  margin-top: 20px;
+}
+
+.newspaper__list--content--bottom h3 {
+  font-size: 18px;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.newspaper__list--content--bottom h3:hover {
+  color: #fb4226 !important ;
+}
+
+.newspaper__list--content--bottom p {
+  font-size: 15px;
+}
+.newspaper__list--mini {
+  padding-bottom: 14px;
+  cursor: pointer;
+}
+
+.newspaper__list--mini img {
+  width: 20%;
+  height: 20%;
+  border-radius: 5px;
+}
+
+.newspaper__list--mini p {
+  font-size: 14px;
+  padding: 0 10px;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.newspaper__list--mini p:hover {
+  color: #fb4226 !important ;
+}
+
+.newspaper__icon i {
+  line-height: 1 !important;
+  color: #949494 !important;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.newspaper__icon i:hover {
+  font-size: 18px;
+}
+
+.newspaper__icon span {
+  line-height: 1 !important;
+  color: #949494 !important;
+}
+
+.newspaper__btn {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.newspaper__btn a {
+  padding: 10px 20px;
+  border: 1px solid #949494;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 3px;
+  color: #949494 !important;
+  transition: all 0.4s;
+}
+
+.newspaper__btn a:hover {
+  border: none;
+  background: #fb4226;
+  color: white !important;
+}

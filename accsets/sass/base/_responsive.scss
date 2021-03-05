@@ -1,0 +1,119 @@
+.nav-btn-mobile {
+  width: 28px;
+  height: 28px;
+  display: none;
+}
+.nav__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  animation: fadeIn linear 0.4s;
+}
+.nav-mobile {
+  position: fixed;
+  z-index: 16;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: all 0.4s;
+  .img-user {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  i.fas.fa-chevron-right.text-center {
+    line-height: 2;
+    padding-right: 10px;
+    padding-top: 5px;
+  }
+  ul {
+    margin-top: 50px;
+    li {
+      a {
+        display: block;
+        padding: 20px;
+        position: relative;
+        width: calc(100% - 40px);
+        font-size: 18px;
+        color: #000;
+      }
+    }
+  }
+}
+.nav__check:checked ~ .nav__overlay {
+  display: block;
+}
+.nav__check:checked ~ .nav-mobile {
+  transform: translateX(0%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+// Mobile
+
+@media screen and (max-width: 576px) {
+  .nav-1 {
+    display: none;
+  }
+  .direct {
+    display: none !important;
+  }
+  .select-film {
+    display: none;
+  }
+  .owl-nav {
+    display: none;
+  }
+  .no-js .owl-carousel,
+  .owl-carousel.owl-loaded {
+    display: none;
+  }
+  section.showtimes.container {
+    display: none;
+  }
+  .nav-btn-mobile {
+    display: block;
+    margin-right: 8px;
+  }
+  .list-film-mobile {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .select-content {
+    display: none !important ;
+  }
+  .showtimes .showtimes__cinema {
+    width: 13% !important ;
+  }
+  .owl-nav span {
+    display: none;
+  }
+  .header .nav-1 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-4.col-md-12.newspaper__list--content--bottom {
+    flex: 1;
+  }
+  .col-md-6.col-md-12.newspaper__list--content--top {
+    flex: 1;
+  }
+}

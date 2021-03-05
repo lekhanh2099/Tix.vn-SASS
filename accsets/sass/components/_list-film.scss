@@ -162,3 +162,91 @@
     transition: all 0.4s;
   }
 }
+
+//  List film on mobile
+
+.list-film-mobile {
+  display: none;
+  padding: 20px 10px 0;
+  margin-bottom: 25px;
+  cursor: pointer;
+  &__item {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  &__img {
+    border-radius: 10px;
+  }
+  &__age {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    background-color: #fb4226;
+    border-radius: 4px;
+    padding: 0 5px;
+    color: #fff;
+    min-width: 33px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 8px;
+    left: 5px;
+  }
+  &__comming {
+    position: absolute;
+    font-size: 14px;
+    background-color: #fb4226;
+    border-radius: 4px;
+    padding: 0 5px;
+    color: #fff;
+    min-width: 33px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 8px;
+    bottom: 10px;
+    right: 0px;
+  }
+  .list-film-mobile__rank {
+    font-size: 16px;
+    background-color: rgba(12, 27, 54, 0.8);
+    border: 1px solid #1f2e46;
+    border-radius: 4px;
+    padding: 2px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    width: 54px;
+    text-align: center;
+    line-height: 1.1;
+    .piont {
+      transform: scaleY(1.2);
+      font-weight: 600;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      text-align: center;
+    }
+    img {
+      display: inline-block;
+      max-width: 8px;
+    }
+  }
+  &__showmore {
+    button {
+      font-size: 14px;
+      color: #949494;
+      border: 1px solid #949494;
+      border-radius: 4px;
+      text-align: center;
+      background: 0 0;
+      padding: 7px 25px;
+      transition: all 0.2s;
+      margin: auto;
+      margin-top: 35px;
+      margin-bottom: 20px;
+      display: block;
+    }
+  }
+}
