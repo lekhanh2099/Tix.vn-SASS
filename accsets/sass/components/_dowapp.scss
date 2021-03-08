@@ -1,0 +1,74 @@
+/* DOWAPP */
+.dowapp {
+  background-image: url(../images/backapp.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 60px;
+  color: white !important;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dowapp__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dowapp__content h3 {
+  line-height: 1.5;
+}
+
+.dowapp__content .dowapp__content--p {
+  padding: 15px 0;
+}
+.dowapp-btn {
+  color: white !important;
+  background-color: #fb4226;
+  padding: 10px 20px;
+}
+
+.dowapp__content p {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.dowapp__content .check {
+  font-weight: 600;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.dowapp__mobie-bg {
+  padding: 0 28%;
+}
+
+.dowapp__mobie {
+  .owl-nav {
+    display: none;
+  }
+  &-bg {
+    position: relative;
+  }
+  &-slide {
+    position: absolute;
+    top: 15px;
+    left: 150px;
+    right: 0;
+    bottom: 0;
+  }
+  &-item {
+    width: 175px;
+    height: auto;
+  }
+  .dowapp__mobile-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0.7;
+  }
+}

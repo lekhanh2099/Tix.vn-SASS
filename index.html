@@ -42,11 +42,52 @@
       <header
         class="header d-flex justify-content-between align-items-center align-content-center"
       >
-        <a href="#home" class="logo">
-          <img src="./accsets/images/web-logo.png" alt="" class="logo-img" />
-        </a>
+        <div class="logo">
+          <a href="#home" class="logo-link">
+            <img src="./accsets/images/web-logo.png" alt="" class="logo-img" />
+          </a>
+        </div>
 
         <nav class="nav-1">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Lịch Chiếu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Cụm Rạp</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Ứng dụng</a>
+            </li>
+          </ul>
+        </nav>
+        <label for="nav-mobile-check" class="nav-btn-mobile">
+          <i class="fas fa-bars"></i>
+        </label>
+        <input
+          type="checkbox"
+          name=""
+          class="nav__check d-none"
+          id="nav-mobile-check"
+        />
+        <label for="nav-mobile-check" class="nav__overlay"></label>
+        <nav class="nav-mobile">
+          <div class="user pr-2 d-flex justify-content-between">
+            <a href="#" class="d-block">
+              <img
+                src="./accsets/images/avatar (1).png"
+                alt=""
+                class="img-user"
+              />
+              <span class="login mx-2">Đăng nhập</span>
+            </a>
+            <label for="nav-mobile-check" class="nav-btn-mobile">
+              <i class="fas fa-chevron-right text-center"></i>
+            </label>
+          </div>
           <ul class="nav-list">
             <li class="nav-item">
               <a href="#" class="nav-link text-dark">Lịch Chiếu</a>
@@ -66,15 +107,21 @@
         <div class="direct d-flex justify-content-between align-items-center">
           <div class="overlay-direct justify-content-end">
             <div class="user pr-2">
-              <a href="#">
-                <img src="./accsets/images/user.jpg" alt="" class="img-user" />
+              <a href="#" class="d-block">
+                <img
+                  src="./accsets/images/avatar (1).png"
+                  alt=""
+                  class="img-user"
+                />
                 <span class="login mx-2">Đăng nhập</span>
               </a>
             </div>
             <div class="map mx-2">
-              <i class="fas fa-map-marker-alt"></i>
-              <span class="location px-2">Hồ Chí Minh</span>
-              <i class="fas fa-angle-down"></i>
+              <a href="#" class="d-block">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="location px-2">Hồ Chí Minh</span>
+                <i class="fas fa-angle-down"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -174,7 +221,7 @@
             </div>
           </div>
 
-          <div class="owl-carousel">
+          <div class="owl-carousel col-12">
             <div class="col-12">
               <div class="container">
                 <div class="row">
@@ -658,6 +705,69 @@
               </div>
             </div>
           </div>
+          <div class="list-film-mobile">
+            <div class="list-film-mobile__item">
+              <img
+                src="./accsets/images/slide-1.jpg"
+                alt=""
+                class="list-film-mobile__img"
+              />
+
+              <span class="list-film-mobile__age">C16</span>
+              <span class="list-film-mobile__comming">Suất chiếu sớm</span>
+              <div class="list-film-mobile__rank">
+                <p class="piont">7.6</p>
+                <p class="star">
+                  <img src="./accsets/images/star1.png" alt="" />
+                  <img src="./accsets/images/star1.png" alt="" />
+                  <img src="./accsets/images/star1.png" alt="" />
+                  <img src="./accsets/images/star1.2.png" alt="" />
+                </p>
+              </div>
+            </div>
+            <div class="list-film-mobile__item">
+              <img
+                src="./accsets/images/slide-2.jpg"
+                alt=""
+                class="list-film-mobile__img"
+              />
+
+              <span class="list-film-mobile__age">C16</span>
+              <span class="list-film-mobile__comming">Suất chiếu sớm</span>
+              <div class="list-film-mobile__rank">
+                <p class="piont">7.6</p>
+                <p class="star">
+                  <img src="./accsets/images/star1.png" alt="" />
+                  <img src="./accsets/images/star1.png" alt="" />
+                  <img src="./accsets/images/star1.png" alt="" />
+                  <img src="./accsets/images/star1.2.png" alt="" />
+                </p>
+              </div>
+            </div>
+            <div class="list-film-mobile__item">
+              <img
+                src="./accsets/images/slide-3.jpg"
+                alt=""
+                class="list-film-mobile__img"
+              />
+
+              <span class="list-film-mobile__age">C16</span>
+              <span class="list-film-mobile__comming">Suất chiếu sớm</span>
+              <div class="list-film-mobile__rank">
+                <p class="piont">7.6</p>
+                <p class="star">
+                  <img src="./accsets/images/star1.png" alt="" />
+                  <img src="./accsets/images/star1.png" alt="" />
+                  <img src="./accsets/images/star1.png" alt="" />
+                  <img src="./accsets/images/star1.2.png" alt="" />
+                </p>
+              </div>
+            </div>
+
+            <div class="list-film-mobile__showmore">
+              <button class="list-film-mobile__btn">Xem thêm</button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1027,6 +1137,305 @@
                 <span class="showtimes__listmovie-time-end"> ~ 23:45 </span>
               </span>
             </a>
+          </div>
+        </div>
+      </section>
+      <!-- NEWSPAPER -->
+      <section class="newspaper">
+        <div class="container">
+          <div class="newspaper__title">
+            <ul>
+              <li>
+                <a href="#" class="active">Điện Ảnh 24h</a>
+                <a href="#">Review</a>
+                <a href="#">Khuyến Mãi</a>
+              </li>
+            </ul>
+          </div>
+          <div class="newspaper__list">
+            <div class="row">
+              <div class="col-md-6 col-md-12 newspaper__list--content--top">
+                <img src="./accsets/images/new-1.jpg" alt="" />
+                <h3>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                  id ex expedita harum repellat nulla, qui veritatis delectus!
+                  Voluptatum, laudantium.
+                </p>
+                <div class="newspaper__icon d-flex">
+                  <i class="far fa-thumbs-up"></i><span class="pl-2">2</span>
+                  <i class="far fa-comment pl-5"></i><span class="pl-2">0</span>
+                </div>
+              </div>
+              <div class="col-md-6 col-md-12 newspaper__list--content--top">
+                <img src="./accsets/images/new-2.jpg" alt="" />
+                <h3>"Bóc tem" tổ hợp giải trí mới toanh giới Hà Thành</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                  id ex expedita harum repellat nulla, qui veritatis delectus!
+                  Voluptatum, laudantium.
+                </p>
+                <div class="newspaper__icon d-flex">
+                  <i class="far fa-thumbs-up"></i><span class="pl-2">2</span>
+                  <i class="far fa-comment pl-5"></i><span class="pl-2">0</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-md-12 newspaper__list--content--bottom">
+                <img src="./accsets/images/new-3.png" alt="" />
+                <h3>
+                  Tiệc Trăng Máu chính thức cán mốc 10 tỷ chỉ sau 2 tuần công
+                  chiếu
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi adipisci aperiam corporis et, ducimus assumenda ut
+                  quisquam ea repudiandae consequatur.
+                </p>
+                <div class="newspaper__icon d-flex">
+                  <i class="far fa-thumbs-up"></i><span class="pl-2">2</span>
+                  <i class="far fa-comment pl-5"></i><span class="pl-2">0</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-md-12 newspaper__list--content--bottom">
+                <img src="./accsets/images/new-3.jpg" alt="" />
+                <h3>
+                  NGÔ THANH VÂN CHÍNH THỨC KHỞI ĐỘNG CUỘC THI THIẾT KẾ TRANG
+                  PHỤC...
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi adipisci aperiam corporis et, ducimus assumenda ut
+                  quisquam ea repudiandae consequatur.
+                </p>
+                <div class="newspaper__icon d-flex">
+                  <i class="far fa-thumbs-up"></i><span class="pl-2">2</span>
+                  <i class="far fa-comment pl-5"></i><span class="pl-2">0</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-md-12 newspaper__list--content--bottom">
+                <div class="d-flex newspaper__list--mini">
+                  <img src="./accsets/images/new-4.png" alt="" />
+                  <p>
+                    [ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị...
+                  </p>
+                </div>
+                <div class="d-flex newspaper__list--mini">
+                  <img src="./accsets/images/new-5.png" alt="" />
+                  <p>Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành...</p>
+                </div>
+                <div class="d-flex newspaper__list--mini">
+                  <img src="./accsets/images/new-4.png" alt="" />
+                  <p>
+                    Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt
+                    Christopher...
+                  </p>
+                </div>
+                <div class="d-flex newspaper__list--mini">
+                  <img src="./accsets/images/new-5.png" alt="" />
+                  <p>
+                    Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng
+                    phòng...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="newspaper__btn">
+            <a href="#">XEM THÊM</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOBIE APP -->
+      <section class="dowapp">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 dowapp__content">
+              <div class="dowapp__content--detail">
+                <h3>Ứng dụng tiện lợi dành cho người yêu điện ảnh</h3>
+                <p class="dowapp__content--p">
+                  Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp
+                  và đổi quà hấp dẫn
+                </p>
+                <button class="btn dowapp-btn">
+                  App miễn phí - Tải về ngay!
+                </button>
+                <p>
+                  TIX có hai phiên bản <span class="check">iOS</span> &
+                  <span class="check">Android</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 dowapp__mobie">
+              <img
+                class="dowapp__mobie-bg"
+                src="./accsets/images/mobile.png"
+                alt=""
+              />
+              <div class="dowapp__mobie-slide owl-carousel">
+                <div class="dowapp__mobie-item">
+                  <img
+                    class="dowapp__mobile-img"
+                    src="./accsets/images/slide-mobie-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="dowapp__mobie-item">
+                  <img
+                    class="dowapp__mobile-img"
+                    src="./accsets/images/slide-mobie-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="dowapp__mobie-item">
+                  <img
+                    class="dowapp__mobile-img"
+                    src="./accsets/images/slide-mobie-1.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER  -->
+      <section class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="row">
+              <div class="col-xl-4 col-sm-12 col-md-4 footer__top--tix">
+                <h3>TIX</h3>
+                <div class="footer__top--list d-flex">
+                  <div class="footer__top--list--left">
+                    <p><a href="#">FAQ</a></p>
+                    <p><a href="#">Brand Guidelines</a></p>
+                  </div>
+                  <div class="footer__top--list--right pl-3">
+                    <p><a href="#">Thỏa thuận sử dụng</a></p>
+                    <p><a href="#">Chính sách bảo mật</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-sm-12 col-md-4 footer__top--partner">
+                <h3>Đối tác</h3>
+                <div class="col-12 partner">
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f1.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f2.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f3.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f4'.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f5.png" alt="" />
+                  </a>
+                </div>
+                <div class="col-12 partner">
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f6.jpg" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f7.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f8.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f9.jpg" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f10.png" alt="" />
+                  </a>
+                </div>
+                <div class="col-12 partner">
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f11.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f12.jpg" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f13.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f14.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f15.png" alt="" />
+                  </a>
+                </div>
+                <div class="col-12 partner">
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f16.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f17.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f18.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f19.png" alt="" />
+                  </a>
+                  <a href="#" class="iconConnect">
+                    <img src="./accsets/images/f20.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-4 col-sm-12 col-md-4 d-flex">
+                <div class="col-6">
+                  <h3 class="text-center">MOBILE APP</h3>
+                  <i class="fab fa-apple"></i>
+                  <i class="fab fa-android"></i>
+                </div>
+                <div class="col-6">
+                  <h3 class="text-center">SOCIAL</h3>
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="row">
+              <div class="col-xl-2 col-md-2 col-sm-12 footer__bottom--logo">
+                <img src="./accsets/images/zion-logo.jpg" alt="" />
+              </div>
+              <div class="col-xl-8 col-md-8 col-sm-12 footer__bottom--content">
+                <h3>TIX - SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h3>
+                <p>
+                  Địa chỉ: Z06 Đường số 13. Phường Tân Thuận Đông, Quận 7, Tp.Hồ
+                  Chí Minh, Việt Nam
+                </p>
+                <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,</p>
+                <p>
+                  đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở
+                  kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.
+                </p>
+                <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+                <p>
+                  Email:
+                  <span style="color: red; cursor: pointer"
+                    >support@tix.vn</span
+                  >
+                </p>
+              </div>
+              <div class="col-xl-2 col-md-2 col-sm-12 footer__bottom--logo-2">
+                <img
+                  src="./accsets/images/d1e6bd560daa9e20131ea8a0f62e87f8.png"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
